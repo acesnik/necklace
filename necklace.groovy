@@ -62,8 +62,8 @@ run { set_input + run_check + //single thread
     build_relatives_superTranscriptome ] + 
     cluster_files +
     run_lace.using(threads: nthreads) + 
-    map_reads + //.using(threads: nthreads) + 
-    get_counts+ //.using(threads: nthreads) + //
+    map_reads.using(threads: nthreads) + 
+    get_counts.using(threads: nthreads) + 
     get_stats } //single thread
 
 
